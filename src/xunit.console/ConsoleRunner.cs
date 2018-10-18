@@ -202,7 +202,7 @@ namespace Xunit.ConsoleClient
             var platform = $"Desktop .NET 4.7.1, runtime: {Environment.Version}";
 #elif NET472
             var platform = $"Desktop .NET 4.7.2, runtime: {Environment.Version}";
-#elif NETCOREAPP
+#elif NETCOREAPP || NETCOREAPP3_0
             var platform = System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription;
 #else
 #error Unknown target platform
